@@ -1,7 +1,7 @@
 
-# LittleHanzi
+# LittleHanziGreek
 
-Little hanzi is a nice simple that i created to make chinese learning process simple efficient and clean. It teches chinese via read articles. I was looking for something similar solution in the open source solution, and could not find any so i decided to create this for myself. Latter on i made it pubic so that if there is some else stuck in the same problem as me, They can use it.
+Little hanzi Greek is a nice simple that i created to make Greek learning process simple efficient and clean. It teches Greek via read articles. I was looking for something similar solution in the open source solution, and could not find any so i decided to create this for myself. Latter on i made it pubic so that if there is some else stuck in the same problem as me, They can use it.
 
 
 
@@ -9,15 +9,15 @@ Little hanzi is a nice simple that i created to make chinese learning process si
 
 ![LittleHanzi Demo](./data/demo/demo.png)
 
-**Live Demo:** [Little Hanzi](https://amaan-samar.github.io/Little_Hanzi_Chinese/)
+**Live Demo:** [Little Hanzi](https://amaan-samar.github.io/Little_Hanzi_Greek/)
 ## What is this?
 
-Little Hanzi lets you paste Chinese text and its English translation, then displays them side-by-side with pinyin pronunciation guides. Perfect for reading practice and vocabulary building.
+Little Hanzi Greek lets you paste GReek text and its English translation, then displays them with lanized pronunciation rendered with its greek and english paragrah for understing meaning. Perfect for reading practice and vocabulary building.
 
 ## Features
 
-- **Paragraph by paragraph reading** - Compare Chinese and English text
-- **Pinyin support** - Toggle pinyin on/off above Chinese characters
+- **Paragraph by paragraph reading** - Compare Greek and English text
+- **Pinyin support** - Toggle romanization on/off above Greek characters
 - **Customizable** - Change font size, font family, and display order
 - **Mobile friendly** - Works on phones and tablets
 - **Works offline** - Install as PWA on your device
@@ -26,7 +26,7 @@ Little Hanzi lets you paste Chinese text and its English translation, then displ
 ## Demo Content
 
 The `/data` folder contains sample articles:
-- `cn.txt` - Chinese text samples
+- `cn.txt` - Greek text samples
 - `en.txt` - English translations
 
 Copy these into the app to see how it works.
@@ -35,7 +35,7 @@ Copy these into the app to see how it works.
 
 ```bash
 # Clone the repo
-git clone https://github.com/Amaan-Samar/Little_Hanzi_Chinese.git
+git clone https://github.com/Amaan-Samar/Little_Hanzi_Greek.git
 
 # Install dependencies
 npm install
@@ -51,7 +51,7 @@ npm run build
 
 - Vue 3
 - Vite
-- pinyin-pro
+- @humanities/greek-conversion
 
 ## License
 

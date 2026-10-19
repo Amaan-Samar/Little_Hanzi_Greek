@@ -13,9 +13,9 @@
           
           <!-- App Info -->
           <div class="mb-6">
-            <h2 class="text-xl font-bold text-gray-800 mb-2">About LittleHanzi 한국인</h2>
+            <h2 class="text-xl font-bold text-gray-800 mb-2">About LittleHanzi Greek</h2>
             <p class="text-sm text-gray-600 leading-relaxed">
-              A tool for learning Korean through reading. Paste Korean text and get instant 
+              A tool for learning Greek through reading. Paste Greek text and get instant 
               romanization and English translations to help you read and understand better.
             </p>
           </div>
@@ -24,12 +24,12 @@
           <div class="mb-6 bg-gradient-to-br from-purple-50/50 to-blue-50/50 rounded-xl p-4 border border-purple-100/50">
             <label class="block text-[11px] font-semibold text-purple-600 uppercase tracking-wider mb-2">App URL</label>
             <a 
-              href="https://amaan-samar.github.io/Little_Hanzi_Korean/"
+              href="https://amaan-samar.github.io/Little_Hanzi_Greek/"
               target="_blank"
               rel="noopener noreferrer"
               class="block text-sm text-purple-700 hover:text-purple-900 font-medium break-all hover:underline"
             >
-              https://amaan-samar.github.io/Little_Hanzi_Korean/
+              https://amaan-samar.github.io/Little_Hanzi_Greek/
             </a>
           </div>
 
