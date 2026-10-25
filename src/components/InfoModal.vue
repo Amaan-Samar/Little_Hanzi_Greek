@@ -99,44 +99,58 @@ const props = defineProps({
 const emit = defineEmits(['close'])
 
 const resources = [
+  // --- Dictionaries (scholarly) ---
   {
-    name: 'Naver News',
-    icon: '🇰🇷',
-    url: 'https://news.naver.com/',
-    description: 'South Korea\'s largest news portal with comprehensive coverage in Korean'
+    name: 'LSJ (Liddell-Scott-Jones)',
+    icon: '📖',
+    url: 'https://lsj.gr/',
+    description: 'The standard Ancient Greek–English lexicon, searchable with transliteration support and multiple language pairs.'
   },
   {
-    name: 'KBS News',
-    icon: '📺',
-    url: 'https://news.kbs.co.kr/',
-    description: 'Major Korean broadcasting network with news articles in Korean'
+    name: 'Brill Dictionary of Ancient Greek',
+    icon: '🏛️',
+    url: 'https://brill.com/display/db/bdgo',
+    description: 'The most comprehensive modern dictionary of Ancient Greek, covering literature, papyri, and inscriptions.'
   },
   {
-    name: 'Hankyoreh',
-    icon: '📰',
-    url: 'https://www.hani.co.kr/',
-    description: 'Progressive Korean newspaper with quality journalism'
+    name: 'Perseus Digital Library',
+    icon: '📜',
+    url: 'https://www.perseus.tufts.edu/',
+    description: 'Primary texts with morphological tools and linked lexica — ideal for reading with scholarly support.'
   },
   {
-    name: 'Chosun Ilbo',
-    icon: '📋',
-    url: 'https://www.chosun.com/',
-    description: 'One of Korea\'s major newspapers with diverse content'
+    name: 'Thesaurus Linguae Graecae (TLG)',
+    icon: '🗄️',
+    url: 'https://stephanus.tlg.uci.edu/',
+    description: 'The definitive digital corpus of Greek literature from Homer to the fall of Byzantium (subscription required).'
   },
+
+  // --- Learning / reference ---
   {
-    name: 'Talk To Me In Korean',
+    name: 'Classics for All',
     icon: '🎓',
-    url: 'https://talktomeinkorean.com/',
-    description: 'Popular Korean learning website with lessons and resources'
+    url: 'https://classicsforall.org.uk/',
+    description: 'Free teaching resources on Homer, Greek tragedy, art, and history for learners and teachers.'
   },
   {
-    name: 'Korean Grammar Dictionary',
-    icon: '📚',
-    url: 'https://www.korean-grammar.com/',
-    description: 'Comprehensive Korean grammar reference and learning tool'
+    name: 'Dickinson College Commentaries',
+    icon: '📝',
+    url: 'https://dcc.dickinson.edu/',
+    description: 'Greek and Latin texts with explanatory notes, vocabulary, and grammatical commentary for intermediate readers.'
+  },
+  {
+    name: 'Greek Language Portal (Κέντρο Ελληνικής Γλώσσας)',
+    icon: '🇬🇷',
+    url: 'https://greeklanguage.gr/',
+    description: 'Official resources for Modern Greek certification, including interactive textbooks and the KLIK app.'
+  },
+  {
+    name: 'Onassis Foundation – Greek Studies',
+    icon: '🏺',
+    url: 'https://www.onassis.org/initiatives/onassis-academic-programs/greek-studies-amplification',
+    description: 'Supports Greek studies worldwide; site includes information on funded programs and classical education initiatives.'
   }
 ]
-
 const close = () => {
   emit('close')
 }
