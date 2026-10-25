@@ -251,10 +251,9 @@ export default {
       if (newGreek && newGreek.trim()) {
         scheduleAutoSave(newGreek, newEnglish)
       } else {
+        // Do NOT reset tracking here — only the explicit "Clear All Text"
+        // action should end the editing session.
         cancelAutoSave()
-        resetCurrentTracking()
-        currentArticleId.value = null
-        currentBookmark.value = null
       }
     }, { deep: true })
 
@@ -437,7 +436,7 @@ export default {
     const clearText = (type = 'both') => {
       if (type === 'greek' || type === 'both') greekText.value = ''
       if (type === 'english' || type === 'both') englishText.value = ''
-      if (type === 'both' || (type === 'greek' && !greekText.value.trim())) {
+      if (type === 'both') {
         cancelAutoSave()
         resetCurrentTracking()
         currentArticleId.value = null
