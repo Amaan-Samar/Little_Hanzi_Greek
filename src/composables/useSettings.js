@@ -10,16 +10,16 @@ export function useSettings() {
       if (saved) {
         const parsed = JSON.parse(saved)
         return {
-          fontSize: parsed.fontSize ?? 18,
+          fontSize: parsed.fontSize ?? 16,
           selectedFont: parsed.selectedFont ?? 'NotoSansSC',
           showRomanization: parsed.showRomanization ?? true,
           showGreek: parsed.showGreek ?? true,
           showEnglish: parsed.showEnglish ?? true,
           displayOrder: parsed.displayOrder === 'en-gr' ? 'en-gr' :
                        parsed.displayOrder === 'gr-en' ? 'gr-en' :
-                       parsed.displayOrder ?? 'gr-en',
-          romanizationFontSize: parsed.romanizationFontSize ?? 10,
-          englishFontSize: parsed.englishFontSize ?? 14,
+                       parsed.displayOrder ?? 'en-gr',
+          romanizationFontSize: parsed.romanizationFontSize ?? 8,
+          englishFontSize: parsed.englishFontSize ?? 10,
           // NEW: Greek transliteration preset
           transliterationPreset: parsed.transliterationPreset ?? 'sbl-academic'
         }
@@ -39,14 +39,14 @@ export function useSettings() {
   }
 
   const defaultSettings = {
-    fontSize: 18,
+    fontSize: 16,
     selectedFont: 'NotoSansSC',
     showRomanization: true,
     showGreek: true,
     showEnglish: true,
-    displayOrder: 'gr-en',
-    romanizationFontSize: 10,
-    englishFontSize: 14,
+    displayOrder: 'en-gr',
+    romanizationFontSize: 8,
+    englishFontSize: 10,
     transliterationPreset: 'sbl-academic'
   }
 

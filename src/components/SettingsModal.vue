@@ -255,14 +255,14 @@ const props = defineProps({
 const emit = defineEmits(['close', 'save', 'reset'])
 
 const localSettings = ref({
-  fontSize: 18,
+  fontSize: 16,
   selectedFont: 'GFSDidot',
   showRomanization: true,
   showGreek: true,
   showEnglish: true,
-  displayOrder: 'gr-en',
-  romanizationFontSize: 10,
-  englishFontSize: 14,
+  displayOrder: 'en-gr',
+  romanizationFontSize: 8,
+  englishFontSize: 10,
   transliterationPreset: 'sbl-academic',
   ...props.settings
 })
@@ -429,14 +429,14 @@ const close = () => {
 
 const resetToDefaults = () => {
   const defaults = {
-    fontSize: 18,
+    fontSize: 16,
     selectedFont: 'GFSDidot',
     showRomanization: true,
     showGreek: true,
     showEnglish: true,
-    displayOrder: 'gr-en',
-    romanizationFontSize: 10,
-    englishFontSize: 14,
+    displayOrder: 'en-gr',
+    romanizationFontSize: 8,
+    englishFontSize: 10,
     transliterationPreset: 'sbl-academic'
   }
   localSettings.value = { ...defaults }
